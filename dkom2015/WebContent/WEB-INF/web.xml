@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+
+	<!-- Main sample servlet mapped to / so that the integration test harness 
+		can detect readiness (generic for all samples) -->
+
+	<welcome-file-list>
+	    <welcome-file>
+		index.jsp
+	    </welcome-file>
+	</welcome-file-list>
+<!-- 	<servlet>
+	    <servlet-name>AuthEndPoint</servlet-name>
+	    <servlet-class>com.sap.dkom2015.openidconnect.AuthEndPoint</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>AuthEndPoint</servlet-name>
+	    <url-pattern>/oauth2endpoint</url-pattern>
+	</servlet-mapping>
+ --><!-- 	<security-constraint>
+	    <web-resource-collection>
+	        <web-resource-name>ALL</web-resource-name>
+	        <url-pattern>/*</url-pattern>
+	    </web-resource-collection>
+	    <auth-constraint>
+	        <description>X</description>
+	        <role-name>everyone</role-name>
+	    </auth-constraint>
+	</security-constraint>
+	<login-config>
+	    <auth-method>FORM</auth-method>
+	</login-config>
+ -->
+ </web-app>
