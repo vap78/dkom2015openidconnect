@@ -31,7 +31,6 @@ import com.google.gson.Gson;
 /**
  * Servlet implementation class AuthEndPoint
  */
-@WebServlet("/oauth2endpoint")
 public class AuthEndPoint extends HttpServlet {
   private static final String CLIENT_SECRET = "_YaeX6K_eavSyzsTERnA88Iq";
   private static final String CLIENT_ID = "826972360704-pc2l8e4bvvg7e4a64nen8ofdsk41c60p.apps.googleusercontent.com";

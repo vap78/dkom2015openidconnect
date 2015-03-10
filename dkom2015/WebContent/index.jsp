@@ -8,16 +8,17 @@
 </head>
 <body>
 
+<h2>Welcome to DKOM 2015 OpenID Connect Demo Application!</h2>
+Click the link bellow to trigger the authentication flow:<br/>
 <%
   String url = "https://accounts.google.com/o/oauth2/auth?" +
  "client_id=826972360704-pc2l8e4bvvg7e4a64nen8ofdsk41c60p.apps.googleusercontent.com&" +
  "response_type=code&" +
  "scope=openid%20email%20profile&" +
  "redirect_uri=http://localhost:8080/dkom2015/oauth2endpoint.jsp&" +
- "state=http://localhost:8080/dkom2015/protected.jsp&" +
- "login_hint=vasil.panushev@gmail.com";
-
-  response.sendRedirect(url);
+ "state=http://localhost:8080/dkom2015/protected.jsp";
  %>
+
+<a href="<%=url%>"><img width="200" src="images/sign-in-with-google.png"/></a>
 </body>
 </html>
